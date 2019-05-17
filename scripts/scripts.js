@@ -17,7 +17,12 @@ var h1 = document.getElementById("h1");
 //TweenMax.from("h1", 1, {opacity: 0, scale:2, delay:2});
 //TweenMax.from(".background", 1, {opacity:0, scale:0, delay:1 });
 
+//Basic TimeLine
+// var tl = new TimelineMax();
+// tl.from(logo, .5, {scale:0});
+// tl.from(h1, .5, {opacity:0, scale:2});
+// tl.from(bg, .5, {scale:0});
+
+//Timeline with some ease-in-shit
 var tl = new TimelineMax();
-tl.from(logo, .5, {scale:0});
-tl.from(h1, .5, {opacity:0, scale:2});
-tl.from(bg, .5, {scale:0});
+tl.from(logo, 1, {scale:0, ease:Bounce.easeOut});
